@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Layout</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+        }
+        .container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #2d2d2d;
+            color: white;
+            padding: 20px;
+            padding-top: 40px; /* Adjusted padding for mute icon */
+            border-radius: 5px;
+            width: 200px; /* Adjust width as needed */
+        }
+        .profile-image {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .name {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        .mute-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px; /* Adjust size as needed */
+            color: white; /* Icon color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="material-icons mute-icon">mic_off</span>
+        <img src="public/Assets/images/pf.png" alt="Profile Image" class="profile-image">
+        <div class="name">Aristotle Mbroh</div>
+    </div>
+</body>
+</html>
